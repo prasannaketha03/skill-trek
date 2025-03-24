@@ -1,0 +1,159 @@
+.course-container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+    background: var(--secondary-color);
+}
+
+/* Course Sidebar */
+.course-sidebar {
+    width: 300px;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.course-info {
+    margin-bottom: 2rem;
+}
+
+.module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.module {
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.module-header {
+    padding: 1rem;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.module-header.completed {
+    color: var(--accent-color);
+}
+
+.module-header.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.module-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.module-content a {
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+}
+
+.module-content a:hover {
+    background: #f8f9fa;
+}
+
+.module-content a.completed {
+    color: var(--accent-color);
+}
+
+.module-content a.active {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Main Content Area */
+.content-main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.content-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.content-nav button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+.lesson-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 1rem 0;
+}
+
+.resources a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.discussion {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.post-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+} 

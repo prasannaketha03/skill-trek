@@ -1,0 +1,393 @@
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+    background: var(--secondary-color);
+}
+
+/* Sidebar Styles */
+.dashboard-sidebar {
+    width: 250px;
+    background: white;
+    padding: 2rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dashboard-nav a {
+    padding: 0.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-nav a:hover,
+.dashboard-nav a.active {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.dashboard-nav i {
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+/* Main Content Styles */
+.dashboard-main {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Progress Summary */
+.progress-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.stat-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Course Progress Cards */
+.course-progress-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.course-progress-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.course-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.resume-btn {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Upcoming Deadlines */
+.deadline-list {
+    margin-top: 1rem;
+}
+
+.deadline-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.deadline-date {
+    text-align: center;
+    min-width: 60px;
+}
+
+.deadline-date .day {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.deadline-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.deadline-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Enrolled Courses */
+.enrolled-courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course-header i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Assignments */
+.assignments-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.assignment-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.assignment-meta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Assessments */
+.assessment-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.assessment-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 80px;
+}
+
+.assessment-type.quiz {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.assessment-type.exam {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+/* Certificates */
+.certificates-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.certificate-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.certificate-icon i {
+    font-size: 2.5rem;
+    color: #ffd700;
+}
+
+.certificate-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn, .download-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.logout-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.logout-btn:hover {
+    background: #000;
+}
+
+/* Course Materials Styles */
+.course-materials {
+    display: none;
+    margin-top: 1.5rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.materials-section {
+    margin-bottom: 1.5rem;
+}
+
+.materials-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.material-list {
+    list-style: none;
+    padding: 0;
+}
+
+.material-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    background: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.material-list i {
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+.material-list span {
+    flex: 1;
+}
+
+.watch-btn, .download-btn, .start-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.watch-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.start-btn {
+    background: #FF9800;
+    color: white;
+}
+
+.toggle-materials-btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-materials-btn:hover {
+    background: #357ABD;
+} 

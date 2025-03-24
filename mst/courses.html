@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SkillTrek</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">SkillTrek</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="courses-container">
+        <h1>Available Courses</h1>
+        <div class="search-filter">
+            <input type="text" id="searchCourse" placeholder="Search courses...">
+            <select id="filterCategory">
+                <option value="all">All Categories</option>
+                <option value="programming">Programming</option>
+                <option value="data-science">Data Science</option>
+                <option value="web-development">Web Development</option>
+                <option value="database">Database</option>
+            </select>
+        </div>
+
+        <div class="courses-grid">
+            <!-- Programming Courses -->
+            <div class="course-card" data-category="programming">
+                <div class="course-image">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Python Programming</h3>
+                    <p>Learn Python from basics to advanced concepts</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 12 weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="programming">
+                <div class="course-image">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Java Programming</h3>
+                    <p>Master Java programming and OOP concepts</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 16 weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Data Science Courses -->
+            <div class="course-card" data-category="data-science">
+                <div class="course-image">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Machine Learning</h3>
+                    <p>Introduction to ML algorithms and applications</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 14 weeks</span>
+                        <span><i class="fas fa-signal"></i> Advanced</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="data-science">
+                <div class="course-image">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Deep Learning</h3>
+                    <p>Neural networks and deep learning fundamentals</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 16 weeks</span>
+                        <span><i class="fas fa-signal"></i> Advanced</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Web Development Courses -->
+            <div class="course-card" data-category="web-development">
+                <div class="course-image">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="course-content">
+                    <h3>MERN Stack Development</h3>
+                    <p>Build full-stack applications with MERN</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 20 weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="web-development">
+                <div class="course-image">
+                    <i class="fab fa-angular"></i>
+                </div>
+                <div class="course-content">
+                    <h3>MEAN Stack Development</h3>
+                    <p>Complete MEAN stack web development</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 20 weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Database Course -->
+            <div class="course-card" data-category="database">
+                <div class="course-image">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Database Management Systems</h3>
+                    <p>Learn database design and management</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 10 weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Data Structures Course -->
+            <div class="course-card" data-category="programming">
+                <div class="course-image">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Master fundamental data structures and algorithms</p>
+                    <div class="course-details">
+                        <span><i class="far fa-clock"></i> 16 weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="courses.js"></script>
+</body>
+</html> 

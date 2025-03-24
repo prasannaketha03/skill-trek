@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Content - SkillTrek</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="course-content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">SkillTrek</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#" class="user-profile">
+                <img src="images/default-avatar.png" alt="Profile">
+                <span>John Doe</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="course-container">
+        <!-- Course Sidebar -->
+        <aside class="course-sidebar">
+            <div class="course-info">
+                <h2>Python Programming</h2>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <span class="progress-text">75% Complete</span>
+            </div>
+
+            <div class="module-list">
+                <div class="module">
+                    <div class="module-header completed">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Module 1: Introduction to Python</span>
+                    </div>
+                    <div class="module-content">
+                        <a href="#" class="completed"><i class="fas fa-play-circle"></i> Getting Started</a>
+                        <a href="#" class="completed"><i class="fas fa-play-circle"></i> Basic Syntax</a>
+                        <a href="#" class="completed"><i class="fas fa-file-alt"></i> Quiz 1</a>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header active">
+                        <i class="fas fa-circle"></i>
+                        <span>Module 2: Data Structures</span>
+                    </div>
+                    <div class="module-content">
+                        <a href="#" class="completed"><i class="fas fa-play-circle"></i> Lists and Tuples</a>
+                        <a href="#" class="active"><i class="fas fa-play-circle"></i> Dictionaries</a>
+                        <a href="#"><i class="fas fa-file-alt"></i> Practice Exercise</a>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-header">
+                        <i class="fas fa-circle"></i>
+                        <span>Module 3: Functions</span>
+                    </div>
+                    <div class="module-content">
+                        <a href="#"><i class="fas fa-play-circle"></i> Function Basics</a>
+                        <a href="#"><i class="fas fa-play-circle"></i> Advanced Functions</a>
+                        <a href="#"><i class="fas fa-file-alt"></i> Final Project</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-main">
+            <div class="content-header">
+                <h1>Dictionaries in Python</h1>
+                <div class="content-nav">
+                    <button class="prev-btn"><i class="fas fa-arrow-left"></i> Previous</button>
+                    <button class="next-btn">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="content-body">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/python-dictionaries.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="lesson-content">
+                    <h2>Lesson Overview</h2>
+                    <p>In this lesson, you'll learn about Python dictionaries and their applications.</p>
+
+                    <div class="resources">
+                        <h3>Additional Resources</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-file-pdf"></i> Lesson Notes (PDF)</a></li>
+                            <li><a href="#"><i class="fas fa-file-code"></i> Code Examples</a></li>
+                            <li><a href="#"><i class="fas fa-tasks"></i> Practice Exercises</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="discussion">
+                        <h3>Discussion Forum</h3>
+                        <div class="discussion-thread">
+                            <!-- Discussion threads would go here -->
+                        </div>
+                        <button class="post-btn">Post a Question</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="course-content.js"></script>
+</body>
+</html> 
